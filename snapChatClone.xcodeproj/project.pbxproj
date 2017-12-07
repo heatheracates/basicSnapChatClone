@@ -17,6 +17,7 @@
 		3249B7201FD8A382003BDF59 /* pictures.png in Resources */ = {isa = PBXBuildFile; fileRef = 3249B71F1FD8A382003BDF59 /* pictures.png */; };
 		3249B7221FD8A52F003BDF59 /* PictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3249B7211FD8A52F003BDF59 /* PictureViewController.swift */; };
 		3249B7241FD8B503003BDF59 /* SelectUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3249B7231FD8B503003BDF59 /* SelectUserViewController.swift */; };
+		3249B7261FD8D20B003BDF59 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3249B7251FD8D20B003BDF59 /* User.swift */; };
 		5BD7A0EFDA2804472DFF3FE7 /* Pods_snapChatClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FC5EA5E638A15501BEB8F0C /* Pods_snapChatClone.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 		3249B71F1FD8A382003BDF59 /* pictures.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pictures.png; sourceTree = SOURCE_ROOT; };
 		3249B7211FD8A52F003BDF59 /* PictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureViewController.swift; sourceTree = "<group>"; };
 		3249B7231FD8B503003BDF59 /* SelectUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectUserViewController.swift; sourceTree = "<group>"; };
+		3249B7251FD8D20B003BDF59 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		3FC5EA5E638A15501BEB8F0C /* Pods_snapChatClone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_snapChatClone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -77,11 +79,12 @@
 				3249B7231FD8B503003BDF59 /* SelectUserViewController.swift */,
 				3249B7211FD8A52F003BDF59 /* PictureViewController.swift */,
 				3249B70D1FD7B4A0003BDF59 /* Main.storyboard */,
-				3249B7101FD7B4A0003BDF59 /* Assets.xcassets */,
 				3249B7121FD7B4A0003BDF59 /* LaunchScreen.storyboard */,
+				3249B7101FD7B4A0003BDF59 /* Assets.xcassets */,
 				3249B7151FD7B4A0003BDF59 /* Info.plist */,
 				3249B71B1FD7BCB9003BDF59 /* GoogleService-Info.plist */,
 				3249B71F1FD8A382003BDF59 /* pictures.png */,
+				3249B7251FD8D20B003BDF59 /* User.swift */,
 			);
 			path = snapChatClone;
 			sourceTree = "<group>";
@@ -242,6 +245,7 @@
 			files = (
 				3249B71E1FD885A9003BDF59 /* SnapViewController.swift in Sources */,
 				3249B7221FD8A52F003BDF59 /* PictureViewController.swift in Sources */,
+				3249B7261FD8D20B003BDF59 /* User.swift in Sources */,
 				3249B7241FD8B503003BDF59 /* SelectUserViewController.swift in Sources */,
 				3249B70C1FD7B4A0003BDF59 /* SignInViewController.swift in Sources */,
 				3249B70A1FD7B4A0003BDF59 /* AppDelegate.swift in Sources */,

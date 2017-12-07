@@ -192,13 +192,28 @@
         <!--Select User View Controller-->
         <scene sceneID="CCb-Vf-YJN">
             <objects>
-                <viewController id="XXt-Sd-QK3" customClass="SelectUserViewController" customModule="snapChatClone" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="XXt-Sd-QK3" customClass="SelectUserViewController" customModule="snapChatClone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ryv-fh-zaH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="REe-8r-4lo">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="REe-8r-4lo" firstAttribute="top" secondItem="mwf-QJ-Ayl" secondAttribute="top" id="DYa-C6-Enb"/>
+                            <constraint firstItem="REe-8r-4lo" firstAttribute="leading" secondItem="mwf-QJ-Ayl" secondAttribute="leading" id="LcG-TU-hwX"/>
+                            <constraint firstItem="mwf-QJ-Ayl" firstAttribute="bottom" secondItem="REe-8r-4lo" secondAttribute="bottom" id="c14-Ul-nLu"/>
+                            <constraint firstItem="mwf-QJ-Ayl" firstAttribute="trailing" secondItem="REe-8r-4lo" secondAttribute="trailing" id="qpP-Jv-J7k"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="mwf-QJ-Ayl"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="REe-8r-4lo" id="ByE-z5-pIf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LxE-kj-Q7f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

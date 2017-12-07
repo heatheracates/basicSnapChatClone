@@ -37,6 +37,9 @@ class PictureViewController: UIViewController, UIImagePickerControllerDelegate, 
         let imagesFolder = Storage.storage().reference().child("images")
         let imageData = UIImageJPEGRepresentation(imageView.image!, 0.1)!
         
+        
+        
+        
         //loading indicator
         activityIndicator.center = self.view.center
         activityIndicator.hidesWhenStopped = true
@@ -47,7 +50,7 @@ class PictureViewController: UIViewController, UIImagePickerControllerDelegate, 
         UIApplication.shared.beginIgnoringInteractionEvents()
         
         //push to firebase
-        imagesFolder.child("images.png").putData(imageData, metadata: nil) { (metadata, error) in
+        imagesFolder.child("\(NSUUID().uuidString).jpeg").putData(imageData, metadata: nil) { (metadata, error) in
             if(error != nil){
                 print("we had an error in uploading to firebase: \(error!)")
                 self.activityIndicator.stopAnimating()
