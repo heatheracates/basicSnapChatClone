@@ -35,18 +35,18 @@ class PictureViewController: UIViewController, UIImagePickerControllerDelegate, 
     @IBAction func nextTapped(_ sender: Any) {
         nextButton.isEnabled = false
         let imagesFolder = Storage.storage().reference().child("images")
-        let imageData = UIImagePNGRepresentation(imageView.image!)!
+        let imageData = UIImageJPEGRepresentation(imageView.image!, 0.1)!
         
         //loading indicator
         activityIndicator.center = self.view.center
         activityIndicator.hidesWhenStopped = true
         activityIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.whiteLarge
        activityIndicator.color = UIColor.darkGray
-        
         view.addSubview(activityIndicator)
         activityIndicator.startAnimating()
         UIApplication.shared.beginIgnoringInteractionEvents()
         
+        //push to firebase
         imagesFolder.child("images.png").putData(imageData, metadata: nil) { (metadata, error) in
             if(error != nil){
                 print("we had an error in uploading to firebase: \(error!)")
