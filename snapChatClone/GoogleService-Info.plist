@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSCameraUsageDescription</key>
+	<string>allows you to take pictures and send them using the app </string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>allows you to addd a photo directly from your library </string>
+	<key>CFBundleIdentifier</key>
+	<string></string>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>670792352609-04b09ripp3307ouuggr4mebh0pcggm4k.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.670792352609-04b09ripp3307ouuggr4mebh0pcggm4k</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBCBcYJSuGSAlK0pf6ryhEt3pAFHl-LVBM</string>
+	<key>GCM_SENDER_ID</key>
+	<string>670792352609</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.HeatherCates.snapChatClone</string>
+	<key>PROJECT_ID</key>
+	<string>snapchatclone-27f16</string>
+	<key>STORAGE_BUCKET</key>
+	<string>snapchatclone-27f16.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:670792352609:ios:1e9f448b68996389</string>
+	<key>DATABASE_URL</key>
+	<string>https://snapchatclone-27f16.firebaseio.com</string>
+</dict>
+</plist>
