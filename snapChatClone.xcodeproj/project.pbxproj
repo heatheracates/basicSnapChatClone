@@ -18,6 +18,9 @@
 		3249B7221FD8A52F003BDF59 /* PictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3249B7211FD8A52F003BDF59 /* PictureViewController.swift */; };
 		3249B7241FD8B503003BDF59 /* SelectUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3249B7231FD8B503003BDF59 /* SelectUserViewController.swift */; };
 		3249B7261FD8D20B003BDF59 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3249B7251FD8D20B003BDF59 /* User.swift */; };
+		3249B72A1FDA1235003BDF59 /* Snap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3249B7291FDA1235003BDF59 /* Snap.swift */; };
+		3249B72C1FDA1889003BDF59 /* ViewSnapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3249B72B1FDA1889003BDF59 /* ViewSnapViewController.swift */; };
+		3249B7321FDA5C87003BDF59 /* film_icon_small.png in Resources */ = {isa = PBXBuildFile; fileRef = 3249B7311FDA5C86003BDF59 /* film_icon_small.png */; };
 		5BD7A0EFDA2804472DFF3FE7 /* Pods_snapChatClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FC5EA5E638A15501BEB8F0C /* Pods_snapChatClone.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +40,9 @@
 		3249B7211FD8A52F003BDF59 /* PictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureViewController.swift; sourceTree = "<group>"; };
 		3249B7231FD8B503003BDF59 /* SelectUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectUserViewController.swift; sourceTree = "<group>"; };
 		3249B7251FD8D20B003BDF59 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		3249B7291FDA1235003BDF59 /* Snap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snap.swift; sourceTree = "<group>"; };
+		3249B72B1FDA1889003BDF59 /* ViewSnapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewSnapViewController.swift; sourceTree = "<group>"; };
+		3249B7311FDA5C86003BDF59 /* film_icon_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = film_icon_small.png; sourceTree = "<group>"; };
 		3FC5EA5E638A15501BEB8F0C /* Pods_snapChatClone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_snapChatClone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -55,7 +61,6 @@
 		3249B6FD1FD7B4A0003BDF59 = {
 			isa = PBXGroup;
 			children = (
-				3249B71D1FD885A9003BDF59 /* SnapViewController.swift */,
 				3249B7081FD7B4A0003BDF59 /* snapChatClone */,
 				3249B7071FD7B4A0003BDF59 /* Products */,
 				FF0036D8EB85ADE68008EF90 /* Pods */,
@@ -75,7 +80,9 @@
 			isa = PBXGroup;
 			children = (
 				3249B7091FD7B4A0003BDF59 /* AppDelegate.swift */,
+				3249B71D1FD885A9003BDF59 /* SnapViewController.swift */,
 				3249B70B1FD7B4A0003BDF59 /* SignInViewController.swift */,
+				3249B72B1FDA1889003BDF59 /* ViewSnapViewController.swift */,
 				3249B7231FD8B503003BDF59 /* SelectUserViewController.swift */,
 				3249B7211FD8A52F003BDF59 /* PictureViewController.swift */,
 				3249B70D1FD7B4A0003BDF59 /* Main.storyboard */,
@@ -84,7 +91,9 @@
 				3249B7151FD7B4A0003BDF59 /* Info.plist */,
 				3249B71B1FD7BCB9003BDF59 /* GoogleService-Info.plist */,
 				3249B71F1FD8A382003BDF59 /* pictures.png */,
+				3249B7311FDA5C86003BDF59 /* film_icon_small.png */,
 				3249B7251FD8D20B003BDF59 /* User.swift */,
+				3249B7291FDA1235003BDF59 /* Snap.swift */,
 			);
 			path = snapChatClone;
 			sourceTree = "<group>";
@@ -172,6 +181,7 @@
 				3249B71C1FD7BCB9003BDF59 /* GoogleService-Info.plist in Resources */,
 				3249B7111FD7B4A0003BDF59 /* Assets.xcassets in Resources */,
 				3249B70F1FD7B4A0003BDF59 /* Main.storyboard in Resources */,
+				3249B7321FDA5C87003BDF59 /* film_icon_small.png in Resources */,
 				3249B7201FD8A382003BDF59 /* pictures.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -188,6 +198,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-snapChatClone/Pods-snapChatClone-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -195,6 +206,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -246,7 +258,9 @@
 				3249B71E1FD885A9003BDF59 /* SnapViewController.swift in Sources */,
 				3249B7221FD8A52F003BDF59 /* PictureViewController.swift in Sources */,
 				3249B7261FD8D20B003BDF59 /* User.swift in Sources */,
+				3249B72C1FDA1889003BDF59 /* ViewSnapViewController.swift in Sources */,
 				3249B7241FD8B503003BDF59 /* SelectUserViewController.swift in Sources */,
+				3249B72A1FDA1235003BDF59 /* Snap.swift in Sources */,
 				3249B70C1FD7B4A0003BDF59 /* SignInViewController.swift in Sources */,
 				3249B70A1FD7B4A0003BDF59 /* AppDelegate.swift in Sources */,
 			);

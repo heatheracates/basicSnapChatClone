@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2DEB9E82B4538D60A690A7E15BB2507B"
+               BlueprintIdentifier = "CC43BCC5191A2B18F549424C0AC42DF3"
                BuildableName = "Pods_snapChatClone.framework"
                BlueprintName = "Pods-snapChatClone"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -47,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2DEB9E82B4538D60A690A7E15BB2507B"
+            BlueprintIdentifier = "CC43BCC5191A2B18F549424C0AC42DF3"
             BuildableName = "Pods_snapChatClone.framework"
             BlueprintName = "Pods-snapChatClone"
             ReferencedContainer = "container:Pods.xcodeproj">

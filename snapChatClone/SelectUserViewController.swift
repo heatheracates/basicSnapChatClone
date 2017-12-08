@@ -15,6 +15,10 @@ class SelectUserViewController: UIViewController, UITableViewDataSource, UITable
     @IBOutlet weak var tableView: UITableView!
     
     var users : [User] = []
+    var message = ""
+    var imgURL = ""
+    var from = ""
+    var uuid = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +26,7 @@ class SelectUserViewController: UIViewController, UITableViewDataSource, UITable
         tableView.delegate = self
         tableView.dataSource = self
         
-        //firebase
+        //firebase loading in all users in DB and putting in array to populate table with
         Database.database().reference().child("users").observe(DataEventType.childAdded) { (snapshot) in
             print(snapshot)
             
@@ -47,8 +51,10 @@ class SelectUserViewController: UIViewController, UITableViewDataSource, UITable
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let user = users[indexPath.row]
-        let snap = ["from":user.email, "description":"hello", "imgURL":"www.test.test"]
+        let snap = ["from":from, "message":message, "imgURL":imgURL, "uuid":uuid]
         Database.database().reference().child("users").child(user.uid).child("snaps").childByAutoId().setValue(snap)
+        //send them back to main page once sent
+        navigationController!.popToRootViewController(animated: true)
     }
     
     override func didReceiveMemoryWarning() {
